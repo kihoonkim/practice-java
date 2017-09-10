@@ -11,7 +11,7 @@ public class FunctionExceptionWrapper1 {
         String[] allowed = {"127.0.0.1", "::1"};
 
         Arrays.stream(allowed)
-                .map(InetAddress::getByName)    // compile error
+     //           .map(InetAddress::getByName)    // compile error
                 .collect(toSet());
     }
 }
